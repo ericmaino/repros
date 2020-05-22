@@ -1,4 +1,4 @@
-package example
+package com.repro
 
 import org.apache.log4j.Logger
 import org.apache.log4j.LogManager
@@ -11,7 +11,7 @@ import com.microsoft.applicationinsights.TelemetryClient;
 // It exits without a long lock ~25% of the time.
 //
 
-object ExampleScalaApp extends App {
+object ReproScalaApp extends App {
   // Logs to console, per log4j config
   lazy val logger = Logger.getLogger("ExampleScalaApp")
   logger.warn("execution telemetry client")

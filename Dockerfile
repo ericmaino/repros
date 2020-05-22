@@ -15,5 +15,4 @@ RUN sbt run
 
 ADD ./hang-repro/ /home/java/repro
 WORKDIR /home/java/repro
-#RUN sbt package
 RUN sbt run
